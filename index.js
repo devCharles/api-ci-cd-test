@@ -7,6 +7,12 @@ const port = process.env.PORT || 8080;
 
 app.get('/', (req, res) => {
   res.json({
+    message: 'APIv1'
+  })
+})
+
+app.get('/hola', (req, res) => {
+  res.json({
     message: 'Hola desde tu API'
   })
 })
